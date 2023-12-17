@@ -1,0 +1,131 @@
+<!-- Modal -->
+<!--<div class="modal fade" id="staticBackdrop" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel"-->
+<!--    aria-hidden="true">-->
+<!--    <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--        <div class="modal-content card-outline card-danger">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="staticBackdropLabel">Lọc thông tin</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <form action="" method="POST" enctype="multipart/form-data">-->
+<!--                <div class="modal-body">-->
+<!--                    <div class="form-group row">-->
+<!--                        <label class="col-sm-4 col-form-label">Tên</label>-->
+<!--                        <div class="col-sm-8">-->
+<!--                            <?php-->
+<!--                            $username = $_SESSION['username'];-->
+<!--                            if ($my_level == 'admin') {-->
+<!--                                $report = $PNH->get_list(" SELECT username FROM `users` WHERE username != 'admin' ");-->
+<!--                            } else if ($my_level == 'daily') {-->
+<!--                                $report = $PNH->get_list(" SELECT username FROM `users` WHERE users.ref = '$my_id' ");-->
+<!--                            } -->
+<!--                            if (!empty($report)) {-->
+<!--                            ?>-->
+<!--                                <select class="custom-select" id="username">-->
+<!--                                    <option value="All">All</option>-->
+<!--                                    <option value="<?=$username;?>"><?=$username;?></option>-->
+<!--                                    <?php foreach ($report as $value) { ?>-->
+<!--                                        <option value="<?= $value['username']; ?>"><?= $value['username']; ?></option>-->
+<!--                                    <?php } ?>-->
+<!--                                </select>-->
+<!--                            <?php } ?>-->
+<!--                        </div>-->
+<!--                    </div>                   -->
+<!--                    <div class="form-group row">-->
+<!--                        <label class="col-sm-4 col-form-label">Ngày</label>-->
+<!--                        <div class="col-sm-8">-->
+<!--                            <div class="input-group">-->
+<!--                            <div class="input-group-prepend">-->
+<!--                            <span class="input-group-text">-->
+<!--                            <i class="far fa-calendar-alt"></i>-->
+<!--                            </span>-->
+<!--                            </div>-->
+<!--                            <input type="text" class="form-control float-right" id="reservation">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" id="btncheckfilter" class="btn btn-danger">Lọc</button>-->
+<!--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- Modal -->
+
+
+ // $('#btnfilter').on('click', function(e) {
+    //     $("#staticBackdrop").modal();
+    //     return false;
+    // });
+    
+    
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content card-outline card-danger">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Lọc thông tin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnfilter" class="btn btn-danger">Lọc</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+
+ $('#addnew').on('click', function(e) {
+        $("#staticBackdrop").modal();
+        return false;
+    });
+
+ <option value="tp">Hồ Chí Minh</option>
+                                            <option value="dt">Đồng Tháp</option>
+                                            <option value="cm">Cà Mau</option>
+                                            <option value="py" selected="">Phú Yên</option>
+                                            <option value="tth" selected="">Thừa Thiên Huế</option>
+                                            <option value="bt">Bến Tre</option>
+                                            <option value="vt">Vũng Tàu</option>
+                                            <option value="bl">Bạc Liêu</option>
+                                            <option value="dl">Đắk Lắk</option>
+                                            <option value="qna">Quảng Nam</option>
+                                            <option value="dna">Đồng Nai</option>
+                                            <option value="ct">Cần Thơ</option>
+                                            <option value="st">Sóc Trăng</option>
+                                            <option value="dan">Đà Nẵng</option>
+                                            <option value="kh">Khánh Hòa</option>
+                                            <option value="tn">Tây Ninh</option>
+                                            <option value="ag">An Giang</option>
+                                            <option value="bt">Bình Thuận</option>
+                                            <option value="bd">Bình Định</option>
+                                            <option value="qt">Quảng Trị</option>
+                                            <option value="qb">Quảng Bình</option>
+                                            <option value="vl">Vĩnh Long</option>
+                                            <option value="bdg">Bình Dương</option>
+                                            <option value="tv">Trà Vinh</option>
+                                            <option value="gl">Gia Lai</option>
+                                            <option value="nt">Ninh Thuận</option>
+                                            <option value="la">Long An</option>
+                                            <option value="bp">Bình Phước</option>
+                                            <option value="hg">Hậu Giang</option>
+                                            <option value="qng">Quãng Ngãi</option>
+                                            <option value="dno">Đắk Nông</option>
+                                            <option value="tg">Tiền Giang</option>
+                                            <option value="kg">Kiên Giang</option>
+                                            <option value="ld">Lâm Đồng</option>
+                                            <option value="kt">Kon Tum</option>
